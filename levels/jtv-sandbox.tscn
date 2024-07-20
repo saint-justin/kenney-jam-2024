@@ -1,13 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://c536uh25kd7fg"]
-
-[node name="Player" parent="." instance=ExtResource("2_pcue6")]
-position = Vector2(1032, 284)
+[gd_scene load_steps=4 format=3 uid="uid://c536uh25kd7fg"]
 
 [ext_resource type="PackedScene" uid="uid://c1bnknk3gu7xt" path="res://scenes/level_manager/level_manager.tscn" id="2_hwxsw"]
 [ext_resource type="PackedScene" uid="uid://2tnfv4oh6aho" path="res://scenes/tilemap-with-tileset.tscn" id="2_mclyh"]
+[ext_resource type="PackedScene" uid="uid://dci51njmja4tw" path="res://entities/player/PlayerScene.tscn" id="3_hbqsh"]
 
 [node name="Jtv-sandbox" type="Node2D"]
 
 [node name="level_manager" parent="." instance=ExtResource("2_hwxsw")]
 
 [node name="TileMap" parent="." instance=ExtResource("2_mclyh")]
+
+[node name="Player" parent="." instance=ExtResource("3_hbqsh")]
+position = Vector2(1018, 269)
