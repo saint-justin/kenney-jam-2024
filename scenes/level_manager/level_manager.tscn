@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1bnknk3gu7xt"]
+
+[ext_resource type="Script" path="res://scenes/level_manager/level_manager.cs" id="1_y84cp"]
+[ext_resource type="PackedScene" uid="uid://cekf8ede8nlws" path="res://scenes/debug_display/debug_display.tscn" id="2_twsu4"]
+[ext_resource type="Script" path="res://scenes/debug_display/debug_display.cs" id="3_pne03"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_y84cp")
+
+[node name="debug_display" parent="." instance=ExtResource("2_twsu4")]
+script = ExtResource("3_pne03")
